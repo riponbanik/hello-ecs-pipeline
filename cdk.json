@@ -1,0 +1,25 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/hello-ecs-pipeline.ts",  
+  "output": "cdk.out",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "**/*.d.ts",
+      "**/*.js",
+      "tsconfig.json",
+      "package*.json",
+      "yarn.lock",
+      "node_modules",
+      "test"
+    ]
+  },
+  "context": {
+    "appName": "HelloECSPipeline",
+    "solutionCode": "hello-ecs-hnb659fds",
+    "@aws-cdk/core:bootstrapQualifier": "hnb659fds"   
+  }
+}
